@@ -1,0 +1,41 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header-lp {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.header-lp img {
+    grid-column: 2 / 3;
+    width: 50px;
+}
+
+.header-lp h1 {
+    grid-column: 3 / 4;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-lp nav {
+    grid-column: 6 / 10;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-lp a {
+    text-decoration: none;
+}
