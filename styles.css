@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap');
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
+}
+
+*:focus {
+    outline: none;
 }
 
 html {
@@ -9,13 +15,17 @@ html {
 
 body {
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
 
 .header-lp {
+    width: 100vw;
+    height: 7vh;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, auto);
     padding: 1rem 0;
     align-items: center;
+    background-color: #222831;
 }
 
 .header-lp img {
@@ -28,14 +38,69 @@ body {
     width: 150px;
     margin: 0 auto;
     text-align: center;
+    color: white;
+    font-size: 2.5rem;
 }
 
 .header-lp nav {
     grid-column: 6 / 10;
     display: flex;
     justify-content: space-evenly;
+    gap: 5px;
 }
 
 .header-lp a {
     text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.subs-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 10rem 0;
+    background-color: #393E46;
+}
+
+.subs-section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.subs-section input, textarea, select {
+    margin-bottom: 1.5rem;
+    color: #222831;
+}
+
+#email-input {
+    /* border-style: none; */
+    width: 35vh;
+    padding: 0.8rem;
+    background-color: #FFD369;
+    border: 1px solid #FFD369;
+    border-radius: 3px;
+}
+
+#submit-button {
+    width: 12vh;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #222831;
+    color: #FFD369;
+    border: 1px solid #222831;
+}
+
+
+#submit-button:hover {
+    background-color: #FFC63C;
+    color: #222831;
+    border: 1px solid #FFC63C;
 }
