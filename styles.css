@@ -16,6 +16,12 @@ html {
 body {
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
+    background: url("./img/main-background.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 .header-lp {
@@ -55,6 +61,10 @@ body {
     color: white;
 }
 
+.header-lp a:hover {
+    color: #FFC63C;
+}
+
 .subs-section {
     display: flex;
     flex-direction: column;
@@ -62,13 +72,13 @@ body {
     height: 25vh;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0 10rem 0;
-    background-color: #393E46;
+    padding: 8rem 0 10rem 0;
+    /* background-color: #393E46; */
 }
 
 .subs-section h1 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     padding-bottom: 2rem;
     color: white;
 }
@@ -104,3 +114,188 @@ body {
     color: #222831;
     border: 1px solid #FFC63C;
 }
+
+.info-section {
+    /* background-image: url(./img/background-section2.svg); */
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-section h1 {
+    color: #FFC63C;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.info-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+.img-info {
+    height: 80px;
+    width: 80px;
+    filter: invert(80%) sepia(89%) saturate(995%) hue-rotate(323deg) brightness(100%) contrast(102%);
+    margin-left: 5rem;
+}
+
+.info-container p {
+    margin-right: 5rem;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+.video-section {
+    width: 100vw;
+    height: auto;
+    /* background-image: url("./img/background-section3.svg"); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-section h2 {
+    color: #FFC63C;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+
+.video-section iframe {
+    padding-bottom: 5rem;
+}
+
+.carrousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.carrousel-section h1 {
+    width: 80%;
+    text-align: center;
+    color: #FFC63C;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+
+.carrousel-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.options-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/3);
+    min-width: 150px;
+    max-width: auto;
+    height: auto;
+    background-color: #222831;
+    margin: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 39px -20px rgba(255,255,255,0.87); 
+    box-shadow: 5px 5px 39px -20px rgba(255,255,255,0.87);
+}
+
+.article-img {
+    width: 80%;
+    height: 70%;
+}
+
+.options-article h2 {
+    background-color: #FFC63C;
+    color: #222831;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.options-article p {
+    width: 80%;
+    text-align: center;
+    padding: 1rem 0;
+    color: #FFC63C;
+    font-size: 1.2rem;
+}
+
+.options-article button {
+    padding: 1rem 0;
+    width: 50%;
+    margin: 1.2rem 0 2rem 0;
+    background-color: #FFC63C;
+    border: none;
+    border-radius: 5px;
+    color: #222831;
+    font-weight: bold;
+}
+
+.options-article button:hover {
+    background-color: #FF5733;
+    color: #222831;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #222831;
+    color: #FFC63C;
+    padding: 1rem;
+}
+
+.footer-navbar span {
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+.footer-navbar a {
+    text-decoration: none;
+    color: #FFC63C;
+    font-weight: bold;
+}
+
+.footer-navbar a:hover {
+    color: #FF5733;
+}
+
+footer p {
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF5733;
+}
+
+
+
