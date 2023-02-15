@@ -146,6 +146,10 @@ body {
     margin-left: 5rem;
 }
 
+.img-info2 {
+    display: none;
+}
+
 .info-container p {
     margin-right: 5rem;
     color: white;
